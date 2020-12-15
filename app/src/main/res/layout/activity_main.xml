@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="311dp"
+        android:layout_height="0dp"
+        android:layout_margin="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:text="@string/Heading"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textColorHighlight="@android:color/holo_orange_dark"
+        android:textColorHint="@android:color/holo_orange_dark"
+        android:textColorLink="@android:color/holo_orange_dark"
+        android:textSize="50sp"
+        app:fontFamily="@font/aclonica"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/grid"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/grid" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="414dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="playerTap"
+                android:paddingTop="20sp"
+                android:paddingBottom="20sp"
+                android:soundEffectsEnabled="true"
+                android:tag="0" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="playerTap"
+                android:paddingTop="20sp"
+                android:paddingBottom="20sp"
+                android:soundEffectsEnabled="true"
+                android:tag="1" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="playerTap"
+                android:paddingTop="20sp"
+                android:paddingBottom="20sp"
+                android:soundEffectsEnabled="true"
+                android:tag="2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="playerTap"
+                android:paddingTop="20sp"
+                android:paddingBottom="20sp"
+                android:soundEffectsEnabled="true"
+                android:tag="3" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="playerTap"
+                android:paddingTop="20sp"
+                android:paddingBottom="20sp"
+                android:soundEffectsEnabled="true"
+                android:tag="4" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="playerTap"
+                android:paddingTop="20sp"
+                android:paddingBottom="20sp"
+                android:soundEffectsEnabled="true"
+                android:tag="5" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="playerTap"
+                android:paddingTop="20sp"
+                android:paddingBottom="20sp"
+                android:soundEffectsEnabled="true"
+                android:tag="6" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="playerTap"
+                android:paddingTop="20sp"
+                android:paddingBottom="20sp"
+                android:soundEffectsEnabled="true"
+                android:tag="7" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="playerTap"
+                android:paddingTop="20sp"
+                android:paddingBottom="20sp"
+                android:soundEffectsEnabled="true"
+                android:tag="8" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="166dp"
+        android:layout_height="31dp"
+        android:layout_marginBottom="4dp"
+        android:soundEffectsEnabled="true"
+        android:textColor="@android:color/holo_green_dark"
+        android:textColorHighlight="@android:color/holo_green_dark"
+        android:textColorHint="@android:color/holo_green_dark"
+        android:textColorLink="@android:color/holo_green_dark"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.958" />
+
+    <Button
+        android:id="@+id/play"
+        android:layout_width="97dp"
+        android:layout_height="43dp"
+        android:background="@android:color/holo_red_dark"
+        android:onClick="play"
+        android:shadowColor="@android:color/background_light"
+        android:tag="11"
+        android:text="@string/play_game"
+        android:textColor="@android:color/background_light"
+        android:textColorHighlight="@android:color/background_light"
+        android:textColorHint="@android:color/background_light"
+        android:textColorLink="@android:color/background_light"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
